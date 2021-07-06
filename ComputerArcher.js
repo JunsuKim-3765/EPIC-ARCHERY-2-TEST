@@ -7,7 +7,7 @@ class ComputerArcher {
       this.body = Matter.Bodies.rectangle(x, y, width, height, options);
       this.width = width;
       this.height = height;
-      //this.collapse = false;
+      this.collapse = false;
       this.image = loadImage("./assets/computerArcher.png");
   
       World.add(world, this.body);

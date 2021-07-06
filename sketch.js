@@ -25,10 +25,11 @@ function setup() {
 
   computerBase = new ComputerBase(1070,500,180,150);
   computer = new Computer(1070,354,50,180);
-  //computerArcher = new ComputerArcher(1070,324,120,120);
+  computerArcher = new ComputerArcher(1470,324,120,120);
   
   //Create an arrow Object
-  computerArrow=new ComputerArrow(computer.x,computer.y);
+  computerArrow=new ComputerArrow(800, 200, 10, 10);
+  playerArrow=new PlayerArrow(20, 20, 10, 10);
 
   
 }
@@ -59,7 +60,7 @@ function draw() {
   computerArrow.display();
   //if Space (32) key is pressed call shoot function of playerArrow
   if(keyCode === 32){
-    arrow.shoot(playerArcher.body.angle);
+    Playerarrow.shoot(playerArcher.body.angle);
     //Call shoot() function and pass angle of playerArcher
     arrow.shoot(playerArcher.body.angle);
 
