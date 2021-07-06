@@ -1,2 +1,1 @@
-# EPIC-ARCHERY-2-TEST
-EPIC ARCHERY
+# Project_Template_24
